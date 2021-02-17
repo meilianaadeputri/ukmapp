@@ -6,7 +6,7 @@ class member_model extends CI_Model {
   }
 
   public function daftarmember(){
-    $this->db->select('nama, prodi, angkatan, telepon');
+    $this->db->select('nama, prodi, angkatan, telepon, email, password');
     $this->db->from('member');
 
     if(isset($_GET['tahun'])) {
